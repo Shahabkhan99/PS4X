@@ -1,6 +1,6 @@
 <html manifest="cache.manifest">
 <head>
-<title>6.72 Exploit Menu By Shahab Khan v2</title>
+<title>6.72 Exploit Menu By Shahab Khan v2.1</title>
 </head>
 <body style="background-color:#3462a8; color:white;">
 <h1 style='font-size:18px;text-align:center;'>LOAD JAILBREAK</h1>
@@ -95,6 +95,10 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 
 <br>
 
+<button onclick="load_ps4debug(); return false" style="background-color:transparent; border-color:transparent">
+<img src="./images/bug.png" alt="text" style="height: 60px; width: 60px;" />
+<p style="color:white;"> PS4debug </p></button>
+	
 <button onclick="load_updatesdisable(); return false" style="background-color:transparent; border-color:transparent">
 <img src="./images/DU.png" alt="text" style="height: 60px; width: 60px;" />
 <p style="color:white;"> Disable Updates </p></button>
@@ -233,6 +237,13 @@ function load_historyblock(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading History Blocker ...</h1>";
 LoadedMSG="History Blocker Loaded ✔";
 var script = document.createElement('script');script.src = "pl_historyBlocker.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+	
+function load_ps4debug(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading PS4Debug ...</h1>";
+LoadedMSG="PS4Debug Loaded ✔";
+var script = document.createElement('script');script.src = "pl_ps4debug.js";document.getElementsByTagName('head')[0].appendChild(script);
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
