@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# v2.0 
+# v2.1 
 # 09/08/2020-05:55:55 
 
 index.html
@@ -22,6 +22,7 @@ pl_ToDEX.js
 pl_WebRTE.js
 pl_fanthresh.js
 pl_HEN.js
+pl_ps4debug.js
 images/1.png
 images/2.png
 images/3.png
