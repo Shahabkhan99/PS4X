@@ -1,6 +1,6 @@
 CACHE MANIFEST 
-# v2.1 
-# 10/08/2020 
+# v2.3 
+# 15/10/2020 
 
 index.html
 exp_common.js
@@ -18,6 +18,7 @@ pl_linux.js
 pl_dbBackup.js
 pl_dbRestore.js
 pl_mira_ren.js
+pl_spoofer.js
 pl_ToDEX.js
 pl_WebRTE.js
 pl_fanthresh.js
@@ -43,6 +44,7 @@ images/Mira.png
 images/RD.png
 images/REN.png
 images/RTE.png
+images/spoofer.png
 images/UA.png
 images/USB.png
 images/bug.png
