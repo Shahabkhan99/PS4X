@@ -1,6 +1,6 @@
-<html manifest="cache.manifest">
+<html manifest="cache.manifest" lang="en">
 <head>
-<title>6.72 Exploit Menu By Shahab Khan v2.1</title>
+<title>6.72 Exploit Menu By Shahab Khan v2.3</title>
 </head>
 <body style="background-color:#3462a8; color:white;">
 <h1 style='font-size:18px;text-align:center;'>LOAD JAILBREAK</h1>
@@ -54,15 +54,17 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 
 <h1 style='font-size:18px;text-align:center;'>PAYLOADS</h1>
 
+<button onclick="load_spooferloader(); return false"style="background-color:transparent; border-color:transparent">
+<img src="./images/spoofer.png" alt="text" style="height: 60px; width: 60px;" />
+<p style="color:white;"> Spoofer 9.99 </p></button>
+
 <button onclick="load_binloader(); return false"style="background-color:transparent; border-color:transparent">
 <img src="./images/BL.png" alt="text" style="height: 60px; width: 60px;" />
 <p style="color:white;"> Bin Loader </p></button>
 
-
 <button onclick="load_ftp(); return false"style="background-color:transparent; border-color:transparent">
 <img src="./images/ftp.png" alt="text" style="height: 60px; width: 60px;" />
 <p style="color:white;"> FTP </p></button>
-
 
 <button onclick="load_dumper(); return false"style="background-color:transparent; border-color:transparent">
 <img src="./images/CB.png" alt="text" style="height: 60px; width: 60px;" />
@@ -157,12 +159,6 @@ LoadedMSG="Exploit + REN Loaded ✔";ExploitMira="yes";MiraSRC="pl_mira_ren.js";
 setTimeout(jailbreak,500);
 }
 
-function load_binloader(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Bin Loader ...</h1>";
-LoadedMSG="Send Payload To Port 9021";
-var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
-}
-
 function load_HEN(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading HEN ...</h1>";
 LoadedMSG="HEN Loaded ✔";
@@ -181,6 +177,19 @@ function load_mira_ren(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Mira ...</h1>";
 LoadedMSG="REN Loaded ✔";
 var script = document.createElement('script');script.src = "pl_mira_ren.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+function load_spooferloader(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Spoofer...</h1>";
+LoadedMSG="Spoofer 9.99 Loaded ✔";
+var script = document.createElement('script');script.src = "pl_spoofer.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+function load_binloader(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Bin Loader ...</h1>";
+LoadedMSG="Send Payload To Port 9021";
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
@@ -284,4 +293,4 @@ var script = document.createElement('script');script.src = "exp_loader.js";docum
 </script>
 </body>
 </html>
-v2.1
+v2.3
